@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Velocity Auto Parts - Your Trusted Auto Parts Supplier</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+  body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+    line-height: 1.6;
+  }
+  header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header h1 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: 1.5px;
+  }
+  nav a {
+    color: #fff;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  nav a:hover {
+    color: #ff6c00;
+  }
+  
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: linear-gradient(90deg, #22272e 40%, #ff6c00 60%);
+    color: #fefefe;
+    padding: 4rem 2rem;
+    gap: 2rem;
+  }
+  .hero-text {
+    flex: 1 1 400px;
+  }
+  .hero-text h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  .hero-text p {
+    font-size: 1.15rem;
+    margin-bottom: 1.5rem;
+  }
+  .hero-img {
+    flex: 1 1 400px;
+    text-align: center;
+  }
+  .hero-img img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  }
+
+  section {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+  }
+
+  h2.section-title {
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+    color: #22272e;
+    border-bottom: 3px solid #ff6c00;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+  }
+
+  .about-content {
+    font-size: 1.1rem;
+    max-width: 900px;
+    color: #444;
+  }
+
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  .product-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    width: 280px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  .product-card:hover {
+    transform: translateY(-8px);
+  }
+  .product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  .product-info {
+    padding: 1rem;
+  }
+  .product-info h3 {
+    margin: 0 0 0.5rem;
+    color: #22272e;
+  }
+  .product-info p {
+    font-size: 0.95rem;
+    color: #666;
+  }
+
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .service-card {
+    flex: 1 1 240px;
+    background-color: #ff6c00;
+    color: #fff;
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(255,108,0,0.4);
+    transition: background-color 0.3s ease;
+  }
+  .service-card:hover {
+    background-color: #e05a00;
+  }
+  .service-card img {
+    width: 64px;
+    margin-bottom: 1rem;
+  }
+  .service-card h4 {
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+  }
+  .service-card p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  footer {
+    background-color: #1a1a1a;
+    color: #bbb;
+    text-align: center;
+    padding: 1rem 2rem;
+  }
+  footer a {
+    color: #ff6c00;
+    text-decoration: none;
+    margin: 0 0.4rem;
+  }
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px){
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+    nav {
+      margin-top: 0.5rem;
+    }
+    nav a {
+      margin-left: 0.8rem;
+      font-size: 0.95rem;
+    }
+    .products, .services {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+</style>
+</head>
+<body>
+<header>
+  <h1>Velocity Auto Parts</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" aria-label="Website introduction">
+  <div class="hero-text">
+    <h2>Drive Your Passion With Quality Auto Parts</h2>
+    <p>At Velocity Auto Parts, we deliver top-tier automotive parts designed to keep your vehicle running smoothly and efficiently. Whether you’re a professional mechanic or a car enthusiast, our extensive inventory and expert advice ensure you get exactly what you need.</p>
+    <p>We pride ourselves on quality, reliability, and exceptional customer service, helping our clients hit the road with confidence.</p>
+  </div>
+  <div class="hero-img">
+    <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=600&q=80" alt="Closeup of car engine parts" />
+  </div>
+</section>
+
+<section id="about" aria-label="About Velocity Auto Parts">
+  <h2 class="section-title">About Velocity Auto Parts</h2>
+  <article class="about-content">
+    <p>Established over 20 years ago, Velocity Auto Parts has grown to be one of the leading auto parts suppliers in the region. Our commitment to quality means that every part we stock is sourced from trusted manufacturers and thoroughly tested to meet industry standards. From essential engine components to high-performance upgrades, our product range is designed to suit all types of vehicles including cars, trucks, SUVs, and motorcycles.</p>
+
+    <p>We understand the importance of getting the right part at the right time. That's why we maintain an extensive and diverse inventory that ensures rapid delivery and availability. Whether you need brake pads, filters, suspension systems, or electrical parts, Velocity Auto Parts consistently provides top-notch products that you can rely on.</p>
+
+    <p>Customer satisfaction is at the heart of our business. Our knowledgeable team is always ready to assist you with expert advice, helping you to make informed decisions to maximize your vehicle's performance. We also provide installation guides, warranties, and after-sales support to enhance your buying experience.</p>
+
+    <p>Beyond supplying parts, we're passionate about fostering a community of car lovers and mechanics. Through our blog and social media channels, we share tips, maintenance guides, and industry news, empowering you with knowledge to care for your vehicle long-term.</p>
+
+    <p>Experience the Velocity difference: trusted products, unbeatable prices, and dedication to your automotive needs. Join thousands of happy customers who keep their vehicles in peak condition with our help. Drive safe and drive smart with Velocity Auto Parts.</p>
+  </article>
+</section>
+
+<section id="products" aria-label="Featured Products">
+  <h2 class="section-title">Featured Products</h2>
+  <div class="products">
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=600&q=80" alt="High-performance brake pads" />
+      <div class="product-info">
+        <h3>High-Performance Brake Pads</h3>
+        <p>Reliable stopping power with minimal wear, designed for all weather conditions. Perfect for both daily drivers and performance cars.</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1571607380090-68a7dc137497?auto=format&fit=crop&w=600&q=80" alt="Engine air filters" />
+      <div class="product-info">
+        <h3>Engine Air Filters</h3>
+        <p>Keep your engine breathing clean with our premium air filters that improve efficiency and extend engine life.</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1614376034135-579a2333d95b?auto=format&fit=crop&w=600&q=80" alt="Car suspension shock absorbers" />
+      <div class="product-info">
+        <h3>Shock Absorbers & Suspension</h3>
+        <p>Enhance your ride’s comfort and handling with durable shock absorbers engineered for smooth drives over any terrain.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" aria-label="Services Offered">
+  <h2 class="section-title">Our Services</h2>
+  <div class="services">
+    <div class="service-card" aria-label="Expert consultation service">
+      <img src="https://img.icons8.com/ios-filled/100/ffffff/mechanic.png" alt="Car mechanic icon" />
+      <h4>Expert Consultation</h4>
+      <p>Our team offers personalized recommendations and technical advice tailored to your vehicle’s needs.</p>
+    </div>
+    <div class="service-card" aria-label="Fast shipping service">
+      <img src="https://img.icons8.com/ios-filled/100/ffffff/delivery.png" alt="Delivery truck icon" />
+      <h4>Fast Shipping</h4>
+      <p>Get your parts delivered quickly and safely with our reliable shipping options nationwide.</p>
+    </div>
+    <div class="service-card" aria-label="Warranty and support service">
+      <img src="https://img.icons8.com/ios-filled/100/ffffff/warranty.png" alt="Warranty icon" />
+      <h4>Warranty & Support</h4>
+      <p>We stand behind our products with comprehensive warranties and responsive after-sales support.</p>
+    </div>
+  </div>
+</section>
+
+<footer id="contact" aria-label="Contact Information">
+  <p>© 2024 Velocity Auto Parts | <a href="mailto:info@velocityautoparts.com">info@velocityautoparts.com</a> | Phone: (555) 123-4567</p>
+  <p>
+    <a href="#" aria-label="Facebook">Facebook</a> |
+    <a href="#" aria-label="Twitter">Twitter</a> |
+    <a href="#" aria-label="Instagram">Instagram</a>
+  </p>
+</footer>
+
+</body>
+</html>
+
