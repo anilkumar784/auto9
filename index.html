@@ -25,6 +25,7 @@
     font-weight: 700;
     font-size: 1.8rem;
     letter-spacing: 1.5px;
+    margin: 0;
   }
   nav a {
     color: #fff;
@@ -32,8 +33,13 @@
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
+    padding-bottom: 0.1rem;
   }
   nav a:hover {
+    color: #ff6c00;
+  }
+  nav a.active {
+    border-bottom: 2px solid #ff6c00;
     color: #ff6c00;
   }
   
@@ -203,6 +209,7 @@
     color: #bbb;
     text-align: center;
     padding: 1rem 2rem;
+    margin-top: 3rem;
   }
   footer a {
     color: #ff6c00;
@@ -242,11 +249,11 @@
 <header>
   <h1>Velocity Auto Parts</h1>
   <nav>
-    <a href="#about">About</a>
-    <a href="#products">Products</a>
-    <a href="#services">Services</a>
-    <a href="#why-choose">Why Choose Us</a>
-    <a href="#contact">Contact</a>
+    <a href="index.html" class="active">Home</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="cookies.html">Cookies Policy</a>
+    <a href="terms.html">Terms &amp; Conditions</a>
+    <a href="contact.html">Contact</a>
   </nav>
 </header>
 
@@ -386,4 +393,3 @@
 
 </body>
 </html>
-
